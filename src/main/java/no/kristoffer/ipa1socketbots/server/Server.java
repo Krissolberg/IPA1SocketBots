@@ -18,13 +18,8 @@ public class Server {
     }
 
     public void createGracefullyShutdown () {
-        Runtime.getRuntime().addShutdownHook(() -> {
-
-            // This method will be called when ctrl+c is pressed in the console
-
-            closeServerSocket();
-
-        });
+        // This method will be called when ctrl+c is pressed in the console
+        Runtime.getRuntime().addShutdownHook(new Thread(this::closeServerSocket);
     }
 
     public void connectClients() {

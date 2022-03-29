@@ -15,7 +15,7 @@ public class ServerApp {
         // 2 How to run the code waiting for clients in its own thread
         // 3 Take what's written from terminal and send to clients
         // 4 Don't wanna close socket everytime I read and write, wanna keep socket open until I kick a client
-        // 5 How to listen to commands etc ctrl+c 
+        // 5 How to listen to commands etc ctrl+c
 
         server.connectClients();
 
